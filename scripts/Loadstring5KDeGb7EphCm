@@ -1,0 +1,9 @@
+local args = {
+    [1] = 8,
+    [2] = game:GetService("Players").LocalPlayer.Character.Head,
+    [3] = 2223,
+    [4] = 6,
+    [5] = 2213
+}
+
+game:GetService("ReplicatedStorage").Connection:InvokeServer(unpack(args))
