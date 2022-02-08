@@ -1,0 +1,1202 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local OpenLibrary = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Main = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local AutoClick = Instance.new("TextButton")
+local Label = Instance.new("TextLabel")
+local Label_2 = Instance.new("TextLabel")
+local AutoUpgradeRebirth = Instance.new("TextButton")
+local Label_3 = Instance.new("TextLabel")
+local AutoUpgradeSpeed = Instance.new("TextButton")
+local Label_4 = Instance.new("TextLabel")
+local AutoGemMultiplier = Instance.new("TextButton")
+local Label_5 = Instance.new("TextLabel")
+local AutoUpgradeHeyperClickPower = Instance.new("TextButton")
+local Label_6 = Instance.new("TextLabel")
+local AutoUpgradeHyperClickCooldown = Instance.new("TextButton")
+local Label_7 = Instance.new("TextLabel")
+local AutoUpgradePetInventory = Instance.new("TextButton")
+local OpenLibrary2 = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextButton_2 = Instance.new("TextButton")
+local TextLabel_5 = Instance.new("TextLabel")
+local main2 = Instance.new("Frame")
+local TextLabel_6 = Instance.new("TextLabel")
+local Auto50k = Instance.new("TextButton")
+local TextLabel_7 = Instance.new("TextLabel")
+local Auto250k = Instance.new("TextButton")
+local label = Instance.new("TextLabel")
+local Auto1m = Instance.new("TextButton")
+local label_2 = Instance.new("TextLabel")
+local Auto5m = Instance.new("TextButton")
+local label_3 = Instance.new("TextLabel")
+local Auto15m = Instance.new("TextButton")
+local label_4 = Instance.new("TextLabel")
+local Auto100m = Instance.new("TextButton")
+local TextLabel_8 = Instance.new("TextLabel")
+local label_5 = Instance.new("TextLabel")
+local Auto250m = Instance.new("TextButton")
+local label_6 = Instance.new("TextLabel")
+local Auto1b = Instance.new("TextButton")
+local label_7 = Instance.new("TextLabel")
+local Auto10b = Instance.new("TextButton")
+local label_8 = Instance.new("TextLabel")
+local Auto50b = Instance.new("TextButton")
+local label_9 = Instance.new("TextLabel")
+local Auto200b = Instance.new("TextButton")
+local label_10 = Instance.new("TextLabel")
+local Auto5t = Instance.new("TextButton")
+local label_11 = Instance.new("TextLabel")
+local Auto30t = Instance.new("TextButton")
+local label_12 = Instance.new("TextLabel")
+local Auto300t = Instance.new("TextButton")
+local label_13 = Instance.new("TextLabel")
+local Auto2Qa = Instance.new("TextButton")
+local label_14 = Instance.new("TextLabel")
+local Auto1Qi = Instance.new("TextButton")
+local Auto70Qa = Instance.new("TextButton")
+local label_15 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+OpenLibrary.Name = "Open Library"
+OpenLibrary.Parent = ScreenGui
+OpenLibrary.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+OpenLibrary.Position = UDim2.new(0.119341567, 0, 0.0682819411, 0)
+OpenLibrary.Size = UDim2.new(0, 159, 0, 25)
+OpenLibrary.Visible = true
+OpenLibrary.Active = true
+OpenLibrary.Draggable = true
+
+TextLabel.Parent = OpenLibrary
+TextLabel.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.0462264158, 0, 7.4505806e-08, 0)
+TextLabel.Size = UDim2.new(0, 141, 0, 23)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Hyper Clicker"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+TextButton.Parent = OpenLibrary
+TextButton.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0.881465256, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 18, 0, 23)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "-"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 30.000
+TextButton.MouseButton1Down:Connect(function()
+	if Main.Visible == true then
+		Main.Visible = false
+		OpenLibrary.Visible = true
+		else
+	if Main.Visible == false then
+			Main.Visible = true
+			OpenLibrary.Visible = true
+		
+	end
+	
+		
+	end
+end)
+
+TextLabel_2.Parent = OpenLibrary
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+TextLabel_2.Position = UDim2.new(0, 0, 0.859125972, 0)
+TextLabel_2.Size = UDim2.new(0, 160, 0, 4)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = ""
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+Main.Name = "Main"
+Main.Parent = OpenLibrary
+Main.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Main.Position = UDim2.new(-0.0044324398, 0, 1.04555058, 0)
+Main.Size = UDim2.new(0, 160, 0, 153)
+Main.Visible = true
+Main.Active = true
+
+TextLabel_3.Parent = Main
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TextLabel_3.Size = UDim2.new(0, 160, 0, 13)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Made By:efeeee#8151"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 14.000
+
+
+local a = false
+AutoClick.Name = "Auto Click"
+AutoClick.Parent = Main
+AutoClick.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AutoClick.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AutoClick.Position = UDim2.new(0.887499928, 0, 0.462959826, 0)
+AutoClick.Size = UDim2.new(0, 18, 0, 20)
+AutoClick.Font = Enum.Font.SourceSans
+AutoClick.Text = ""
+AutoClick.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoClick.TextSize = 14.000
+AutoClick.MouseButton1Down:Connect(function()
+	if a == false then
+		a = true
+		AutoClick.Text = "✓"
+		AutoClick.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		AutoClick.TextColor3 = Color3.fromRGB(0,0,0)
+		while a do
+			wait()
+			game.ReplicatedStorage.Remotes.Click:FireServer()
+			game.ReplicatedStorage.Remotes.HyperClick:FireServer()
+		end
+	else
+		a = false
+		AutoClick.Text = ""
+		AutoClick.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		AutoClick.TextColor3 = Color3.fromRGB(30,30,30)
+	end
+end)
+
+Label.Name = "Label"
+Label.Parent = Main
+Label.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Label.BackgroundTransparency = 0.500
+Label.Position = UDim2.new(1.39698386e-09, 0, 0.469495624, 0)
+Label.Size = UDim2.new(0, 141, 0, 20)
+Label.Font = Enum.Font.SourceSans
+Label.Text = "Auto Click"
+Label.TextColor3 = Color3.fromRGB(255, 255, 255)
+Label.TextSize = 14.000
+
+Label_2.Name = "Label"
+Label_2.Parent = Main
+Label_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Label_2.BackgroundTransparency = 0.500
+Label_2.Position = UDim2.new(0.00624999776, 0, 0.600042164, 0)
+Label_2.Size = UDim2.new(0, 141, 0, 20)
+Label_2.Font = Enum.Font.SourceSans
+Label_2.Text = "Auto Upgrade Rebirth"
+Label_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Label_2.TextSize = 14.000
+local b = false
+
+AutoUpgradeRebirth.Name = "Auto Upgrade Rebirth"
+AutoUpgradeRebirth.Parent = Main
+AutoUpgradeRebirth.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AutoUpgradeRebirth.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AutoUpgradeRebirth.Position = UDim2.new(0.887499928, 0, 0.593506217, 0)
+AutoUpgradeRebirth.Size = UDim2.new(0, 18, 0, 20)
+AutoUpgradeRebirth.Font = Enum.Font.SourceSans
+AutoUpgradeRebirth.Text = ""
+AutoUpgradeRebirth.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoUpgradeRebirth.TextSize = 14.000
+AutoUpgradeRebirth.MouseButton1Down:Connect(function()
+	if b == false then
+		b = true
+		AutoUpgradeRebirth.Text = "✓"
+		AutoUpgradeRebirth.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		AutoUpgradeRebirth.TextColor3 = Color3.fromRGB(0, 0, 0)
+		while b do
+			wait()
+			game.ReplicatedStorage.Upgrades.Upgrades:InvokeServer("RebirthButtons",true)
+		end
+	else
+		b = false
+		AutoUpgradeRebirth.Text = ""
+		AutoUpgradeRebirth.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+		AutoUpgradeRebirth.TextColor3 = Color3.fromRGB(30,30,30)
+	end
+end)
+
+Label_3.Name = "Label"
+Label_3.Parent = Main
+Label_3.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Label_3.BackgroundTransparency = 0.500
+Label_3.Position = UDim2.new(2.37487257e-08, 0, 0.20771277, 0)
+Label_3.Size = UDim2.new(0, 141, 0, 20)
+Label_3.Font = Enum.Font.SourceSans
+Label_3.Text = "Auto Upgrade Speed"
+Label_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Label_3.TextSize = 14.000
+local c = false
+AutoUpgradeSpeed.Name = "Auto Upgrade Speed"
+AutoUpgradeSpeed.Parent = Main
+AutoUpgradeSpeed.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AutoUpgradeSpeed.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AutoUpgradeSpeed.Position = UDim2.new(0.887499928, 0, 0.201176867, 0)
+AutoUpgradeSpeed.Size = UDim2.new(0, 18, 0, 20)
+AutoUpgradeSpeed.Font = Enum.Font.SourceSans
+AutoUpgradeSpeed.Text = ""
+AutoUpgradeSpeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoUpgradeSpeed.TextSize = 14.000
+AutoUpgradeSpeed.MouseButton1Down:Connect(function()
+	if c == false then
+		c = true
+		AutoUpgradeSpeed.Text = "✓"
+		AutoUpgradeSpeed.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+		AutoUpgradeSpeed.TextColor3 = Color3.fromRGB(0,0,0)
+		while c do
+			
+			args = {
+				[1] = "Speed",
+				[2] = true,
+			}
+			
+			game:GetService("ReplicatedStorage").Upgrades.Upgrades:InvokeServer(unpack(args))
+		end
+	else
+		c = false
+		AutoUpgradeSpeed.Text = ""
+		AutoUpgradeSpeed.BackgroundColor3 = Color3.fromRGB(30,30,30)
+	end
+end)
+
+Label_4.Name = "Label"
+Label_4.Parent = Main
+Label_4.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Label_4.BackgroundTransparency = 0.500
+Label_4.Position = UDim2.new(0, 0, 0.0833573043, 0)
+Label_4.Size = UDim2.new(0, 141, 0, 20)
+Label_4.Font = Enum.Font.SourceSans
+Label_4.Text = "Auto Upgrade Gem Multiplier"
+Label_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Label_4.TextSize = 12.000
+
+local d = false
+AutoGemMultiplier.Name = "Auto Gem Multiplier"
+AutoGemMultiplier.Parent = Main
+AutoGemMultiplier.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AutoGemMultiplier.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AutoGemMultiplier.Position = UDim2.new(0.887500048, 0, 0.0833572745, 0)
+AutoGemMultiplier.Size = UDim2.new(0, 18, 0, 20)
+AutoGemMultiplier.Font = Enum.Font.SourceSans
+AutoGemMultiplier.Text = ""
+AutoGemMultiplier.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoGemMultiplier.TextSize = 14.000
+AutoGemMultiplier.MouseButton1Down:Connect(function()
+	if d == false then
+		d = true
+		AutoGemMultiplier.Text = "✓"
+		AutoGemMultiplier.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		AutoGemMultiplier.TextColor3 = Color3.fromRGB(0,0,0)
+		while d do
+			wait()
+			args = {
+				[1] = "GemMultiplier",
+				[2] = false,
+			}
+			
+			game:GetService("ReplicatedStorage").Upgrades.Upgrades:InvokeServer(unpack(args))
+		end
+	else
+		d = false
+		AutoGemMultiplier.Text = ""
+		AutoGemMultiplier.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		AutoGemMultiplier.TextColor3 = Color3.fromRGB(0,0,0)
+
+	end
+end)
+Label_5.Name = "Label"
+Label_5.Parent = Main
+Label_5.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Label_5.BackgroundTransparency = 0.500
+Label_5.Position = UDim2.new(2.37487257e-08, 0, 0.730243683, 0)
+Label_5.Size = UDim2.new(0, 141, 0, 20)
+Label_5.Font = Enum.Font.SourceSans
+Label_5.Text = "Auto Upgrade HyperClickPower"
+Label_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Label_5.TextSize = 12.000
+local e = false
+AutoUpgradeHeyperClickPower.Name = "Auto Upgrade HeyperClickPower"
+AutoUpgradeHeyperClickPower.Parent = Main
+AutoUpgradeHeyperClickPower.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AutoUpgradeHeyperClickPower.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AutoUpgradeHeyperClickPower.Position = UDim2.new(0.887499928, 0, 0.730243444, 0)
+AutoUpgradeHeyperClickPower.Size = UDim2.new(0, 18, 0, 20)
+AutoUpgradeHeyperClickPower.Font = Enum.Font.SourceSans
+AutoUpgradeHeyperClickPower.Text = ""
+AutoUpgradeHeyperClickPower.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoUpgradeHeyperClickPower.TextSize = 14.000
+AutoUpgradeHeyperClickPower.MouseButton1Down:Connect(function()
+	if e == false then
+		e = true
+		AutoUpgradeHeyperClickPower.Text = "✓"
+		AutoUpgradeHeyperClickPower.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		AutoUpgradeHeyperClickPower.TextColor3 = Color3.fromRGB(0,0,0)
+		while e do
+			wait()
+			
+			
+			args = {
+				[1] = "HyperClickPower",
+				[2] = false,
+			}
+			
+			game:GetService("ReplicatedStorage").Upgrades.Upgrades:InvokeServer(unpack(args))
+			
+		end
+	else
+		e = false
+		AutoUpgradeHeyperClickPower.Text = ""
+		AutoUpgradeHeyperClickPower.BackgroundColor3 = Color3.fromRGB(30,30,30)
+	end
+end)
+
+Label_6.Name = "Label"
+Label_6.Parent = Main
+Label_6.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Label_6.BackgroundTransparency = 0.500
+Label_6.Position = UDim2.new(0.00625000009, 0, 0.344450206, 0)
+Label_6.Size = UDim2.new(0, 141, 0, 20)
+Label_6.Font = Enum.Font.SourceSans
+Label_6.Text = "Auto Upgrade HyperClickCooldown"
+Label_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Label_6.TextSize = 10.000
+
+
+local f = false
+
+AutoUpgradeHyperClickCooldown.Name = "Auto Upgrade HyperClickCooldown"
+AutoUpgradeHyperClickCooldown.Parent = Main
+AutoUpgradeHyperClickCooldown.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AutoUpgradeHyperClickCooldown.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AutoUpgradeHyperClickCooldown.Position = UDim2.new(0.887499988, 0, 0.331378222, 0)
+AutoUpgradeHyperClickCooldown.Size = UDim2.new(0, 18, 0, 20)
+AutoUpgradeHyperClickCooldown.Font = Enum.Font.SourceSans
+AutoUpgradeHyperClickCooldown.Text = ""
+AutoUpgradeHyperClickCooldown.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoUpgradeHyperClickCooldown.TextSize = 14.000
+AutoUpgradeHyperClickCooldown.MouseButton1Down:Connect(function()
+	if f == false then
+		f = true
+		AutoUpgradeHyperClickCooldown.Text = "✓"
+		AutoUpgradeHyperClickCooldown.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		AutoUpgradeHyperClickCooldown.TextColor3 = Color3.fromRGB(0,0,0)
+		while f do
+			wait()
+			
+			
+			args = {
+				[1] = "HyperClickCooldown",
+				[2] = false,
+			}
+			
+			game:GetService("ReplicatedStorage").Upgrades.Upgrades:InvokeServer(unpack(args))
+		end
+	else
+		f = false
+		AutoUpgradeHyperClickCooldown.Text = ""
+		AutoUpgradeHyperClickCooldown.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+		
+	end
+end)
+
+Label_7.Name = "Label"
+Label_7.Parent = Main
+Label_7.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Label_7.BackgroundTransparency = 0.500
+Label_7.Position = UDim2.new(0, 0, 0.860617578, 0)
+Label_7.Size = UDim2.new(0, 141, 0, 20)
+Label_7.Font = Enum.Font.SourceSans
+Label_7.Text = "Auto Upgrade Pet İnventory"
+Label_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+Label_7.TextSize = 10.000
+
+
+local gr = false
+
+
+
+AutoUpgradePetInventory.Name = "Auto Upgrade Pet Inventory"
+AutoUpgradePetInventory.Parent = Main
+AutoUpgradePetInventory.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AutoUpgradePetInventory.BorderColor3 = Color3.fromRGB(27, 42, 53)
+AutoUpgradePetInventory.Position = UDim2.new(0.887499928, 0, 0.867153525, 0)
+AutoUpgradePetInventory.Size = UDim2.new(0, 18, 0, 20)
+AutoUpgradePetInventory.Font = Enum.Font.SourceSans
+AutoUpgradePetInventory.Text = ""
+AutoUpgradePetInventory.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutoUpgradePetInventory.TextSize = 14.000
+AutoUpgradePetInventory.MouseButton1Down:Connect(function()
+	if gr == false then
+		gr = true
+		AutoUpgradePetInventory.Text = "✓"
+		AutoUpgradePetInventory.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		AutoUpgradePetInventory.TextColor3 = Color3.fromRGB(0,0,0)
+		while gr do
+			wait()
+			
+			args = {
+				[1] = "PetInventory",
+				[2] = true,
+			}
+			
+			game:GetService("ReplicatedStorage").Upgrades.Upgrades:InvokeServer(unpack(args))
+		end
+	else
+		gr = false
+		AutoUpgradePetInventory.Text = ""
+		AutoUpgradePetInventory.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+	end
+	
+	end)
+
+OpenLibrary2.Name = "Open Library2"
+OpenLibrary2.Parent = ScreenGui
+OpenLibrary2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+OpenLibrary2.Position = UDim2.new(0.362639546, 0, 0.0704545379, 0)
+OpenLibrary2.Size = UDim2.new(0, 160, 0, 25)
+OpenLibrary2.Visible = true
+OpenLibrary2.Active = true
+OpenLibrary2.Draggable = true
+
+TextLabel_4.Parent = OpenLibrary2
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.00625000009, 0, -0.0373045355, 0)
+TextLabel_4.Size = UDim2.new(0, 141, 0, 23)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Hyper Clicker"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 14.000
+
+TextButton_2.Parent = OpenLibrary2
+TextButton_2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.Position = UDim2.new(0.887500048, 0, -0.0399999991, 0)
+TextButton_2.Size = UDim2.new(0, 18, 0, 23)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "-"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 30.000
+TextButton_2.MouseButton1Down:Connect(function()
+	if main2.Visible == true then
+		main2.Visible = false
+		OpenLibrary2.Visible = true
+	else
+		if main2.Visible == false then
+			main2.Visible = true
+			OpenLibrary2.Visible = true
+		end
+	end
+	
+end)
+TextLabel_5.Parent = OpenLibrary2
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+TextLabel_5.Position = UDim2.new(0, 0, 0.882695496, 0)
+TextLabel_5.Size = UDim2.new(0, 160, 0, 4)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = ""
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 14.000
+
+main2.Name = "main 2"
+main2.Parent = OpenLibrary2
+main2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+main2.Position = UDim2.new(-0.000360101461, 0, 1.00775325, 0)
+main2.Size = UDim2.new(0, 160, 0, 343)
+main2.Visible = true
+main2.Active = true
+
+TextLabel_6.Parent = main2
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_6.BackgroundTransparency = 0.500
+TextLabel_6.Position = UDim2.new(0, 0, 0.0366197191, 0)
+TextLabel_6.Size = UDim2.new(0, 141, 0, 20)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "Auto 50k Rebirth"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 14.000
+local br = false
+Auto50k.Name = "Auto 50 k"
+Auto50k.Parent = main2
+Auto50k.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Auto50k.Position = UDim2.new(0.881249964, 0, 0.0366197154, 0)
+Auto50k.Size = UDim2.new(0, 18, 0, 20)
+Auto50k.Font = Enum.Font.SourceSans
+Auto50k.Text = ""
+Auto50k.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto50k.TextSize = 14.000
+Auto50k.MouseButton1Down:Connect(function()
+	if br == false then
+		br = true
+		Auto50k.Text = "✓"
+		Auto50k.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		Auto50k.TextColor3 = Color3.fromRGB(0,0,0)
+		while br do
+			wait()
+			game.ReplicatedStorage.Remotes.Rebirth:FireServer(50000)
+		end
+		
+	else
+		br = false
+		Auto50k.Text = ""
+		Auto50k.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+	end
+end)
+
+TextLabel_7.Parent = main2
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_7.BackgroundTransparency = 0.500
+TextLabel_7.Position = UDim2.new(0, 0, 0.09295775, 0)
+TextLabel_7.Size = UDim2.new(0, 141, 0, 20)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "Auto 250k Rebirth"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 14.000
+local z = false
+Auto250k.Name = "Auto 250 k"
+Auto250k.Parent = main2
+Auto250k.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Auto250k.Position = UDim2.new(0.881249964, 0, 0.09295775, 0)
+Auto250k.Size = UDim2.new(0, 18, 0, 20)
+Auto250k.Font = Enum.Font.SourceSans
+Auto250k.Text = ""
+Auto250k.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto250k.TextSize = 14.000
+Auto250k.MouseButton1Down:Connect(function()
+	if z == false then
+		z = true
+		Auto250k.Text = "✓"
+		Auto250k.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		Auto250k.TextColor3 = Color3.fromRGB(0,0,0)
+		while z do
+			wait()
+			game.ReplicatedStorage.Remotes.Rebirth:FireServer(250000)
+		end
+		
+	else
+		z = false
+		Auto250k.Text = ""
+		Auto250k.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+	end
+end)
+
+label.Name = "label"
+label.Parent = main2
+label.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+label.BackgroundTransparency = 0.500
+label.Position = UDim2.new(0, 0, 0.149295762, 0)
+label.Size = UDim2.new(0, 141, 0, 20)
+label.Font = Enum.Font.SourceSans
+label.Text = "Auto 1m Rebirth"
+label.TextColor3 = Color3.fromRGB(255, 255, 255)
+label.TextSize = 14.000
+local g = false
+Auto1m.Name = "Auto 1m"
+Auto1m.Parent = main2
+Auto1m.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Auto1m.Position = UDim2.new(0.881249964, 0, 0.149295762, 0)
+Auto1m.Size = UDim2.new(0, 18, 0, 20)
+Auto1m.Font = Enum.Font.SourceSans
+Auto1m.Text = ""
+Auto1m.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto1m.TextSize = 14.000
+Auto1m.MouseButton1Down:Connect(function()
+	if g == false then
+		
+		g = true
+		Auto1m.Text = "✓"
+		Auto1m.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		Auto1m.TextColor3 = Color3.fromRGB(0,0,0)
+		while g do
+			wait()
+			game.ReplicatedStorage.Remotes.Rebirth:FireServer(1000000)
+		end
+		
+	else
+		g = false
+		Auto1m.Text = ""
+		Auto1m.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+	end
+end)
+label_2.Name = "label"
+label_2.Parent = main2
+label_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+label_2.BackgroundTransparency = 0.500
+label_2.Position = UDim2.new(0, 0, 0.205633804, 0)
+label_2.Size = UDim2.new(0, 141, 0, 20)
+label_2.Font = Enum.Font.SourceSans
+label_2.Text = "Auto 5m Rebirth"
+label_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+label_2.TextSize = 14.000
+local m = false
+Auto5m.Name = "Auto 5m"
+Auto5m.Parent = main2
+Auto5m.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Auto5m.Position = UDim2.new(0.881249964, 0, 0.205633804, 0)
+Auto5m.Size = UDim2.new(0, 18, 0, 20)
+Auto5m.Font = Enum.Font.SourceSans
+Auto5m.Text = ""
+Auto5m.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto5m.TextSize = 14.000
+Auto5m.MouseButton1Down:Connect(function()
+	if m == false then
+		
+		m = true
+		Auto5m.Text = "✓"
+		Auto5m.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		Auto5m.TextColor3 = Color3.fromRGB(0,0,0)
+		while m do
+			wait()
+			game.ReplicatedStorage.Remotes.Rebirth:FireServer(5000000)
+		end
+		
+	else
+		m = false
+		Auto5m.Text = ""
+		Auto5m.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+	end
+end)
+
+label_3.Name = "label"
+label_3.Parent = main2
+label_3.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+label_3.BackgroundTransparency = 0.500
+label_3.Position = UDim2.new(0.00625000009, 0, 0.261971831, 0)
+label_3.Size = UDim2.new(0, 141, 0, 20)
+label_3.Font = Enum.Font.SourceSans
+label_3.Text = "Auto 15m Rebirth"
+label_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+label_3.TextSize = 14.000
+local n = false
+
+Auto15m.Name = "Auto 15m"
+Auto15m.Parent = main2
+Auto15m.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Auto15m.Position = UDim2.new(0.881249964, 0, 0.261971831, 0)
+Auto15m.Size = UDim2.new(0, 18, 0, 20)
+Auto15m.Font = Enum.Font.SourceSans
+Auto15m.Text = ""
+Auto15m.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto15m.TextSize = 14.000
+Auto15m.MouseButton1Down:Connect(function()
+	if n == false then
+		
+		n = true
+		Auto15m.Text = "✓"
+		Auto15m.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		Auto15m.TextColor3 = Color3.fromRGB(0,0,0)
+		while n do
+			wait()
+			game.ReplicatedStorage.Remotes.Rebirth:FireServer(15000000)
+		end
+		
+	else
+		n = false
+		Auto15m.Text = ""
+		Auto15m.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+	end
+end)
+
+
+label_4.Name = "label"
+label_4.Parent = main2
+label_4.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+label_4.BackgroundTransparency = 0.500
+label_4.Position = UDim2.new(0, 0, 0.318309844, 0)
+label_4.Size = UDim2.new(0, 141, 0, 20)
+label_4.Font = Enum.Font.SourceSans
+label_4.Text = "Auto 100m Rebirth"
+label_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+label_4.TextSize = 14.000
+local h = false
+Auto100m.Name = "Auto 100m"
+Auto100m.Parent = main2
+Auto100m.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Auto100m.Position = UDim2.new(0.881249964, 0, 0.318309844, 0)
+Auto100m.Size = UDim2.new(0, 18, 0, 20)
+Auto100m.Font = Enum.Font.SourceSans
+Auto100m.Text = ""
+Auto100m.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto100m.TextSize = 14.000
+Auto100m.MouseButton1Down:Connect(function()
+	if h == false then
+		
+		h = true
+		Auto100m.Text = "✓"
+		Auto100m.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		Auto100m.TextColor3 = Color3.fromRGB(0,0,0)
+		while h do
+			wait()
+			game.ReplicatedStorage.Remotes.Rebirth:FireServer(100000000)
+		end
+		
+	else
+		h = false
+		Auto100m.Text = ""
+		Auto100m.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+	end
+end)
+
+TextLabel_8.Parent = main2
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TextLabel_8.Position = UDim2.new(7.17118382e-08, 0, -9.77888703e-09, 0)
+TextLabel_8.Size = UDim2.new(0, 160, 0, 13)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = "Rebirths"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 14.000
+
+label_5.Name = "label"
+label_5.Parent = main2
+label_5.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+label_5.BackgroundTransparency = 0.500
+label_5.Position = UDim2.new(0, 0, 0.374647886, 0)
+label_5.Size = UDim2.new(0, 141, 0, 20)
+label_5.Font = Enum.Font.SourceSans
+label_5.Text = "Auto 250m Rebirth"
+label_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+label_5.TextSize = 14.000
+
+local u = false
+
+Auto250m.Name = "Auto 250m"
+Auto250m.Parent = main2
+Auto250m.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Auto250m.Position = UDim2.new(0.881249964, 0, 0.366197169, 0)
+Auto250m.Size = UDim2.new(0, 18, 0, 20)
+Auto250m.Font = Enum.Font.SourceSans
+Auto250m.Text = ""
+Auto250m.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto250m.TextSize = 14.000
+Auto250m.MouseButton1Down:Connect(function()
+	if u == false then
+		
+		u = true
+		Auto250m.Text = "✓"
+		Auto250m.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		Auto250m.TextColor3 = Color3.fromRGB(0,0,0)
+		while u do
+			wait()
+			game.ReplicatedStorage.Remotes.Rebirth:FireServer(250000000)
+		end
+		
+	else
+		u = false
+		Auto250m.Text = ""
+		Auto250m.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+	end
+end)
+
+label_6.Name = "label"
+label_6.Parent = main2
+label_6.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+label_6.BackgroundTransparency = 0.500
+label_6.Position = UDim2.new(0, 0, 0.422535211, 0)
+label_6.Size = UDim2.new(0, 141, 0, 20)
+label_6.Font = Enum.Font.SourceSans
+label_6.Text = "Auto 1b Rebirth"
+label_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+label_6.TextSize = 14.000
+local x = false
+Auto1b.Name = "Auto 1b"
+Auto1b.Parent = main2
+Auto1b.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Auto1b.Position = UDim2.new(0.881249964, 0, 0.422535181, 0)
+Auto1b.Size = UDim2.new(0, 18, 0, 20)
+Auto1b.Font = Enum.Font.SourceSans
+Auto1b.Text = ""
+Auto1b.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto1b.TextSize = 14.000
+Auto1b.MouseButton1Down:Connect(function()
+	if x == false then
+		
+		x = true
+		Auto1b.Text = "✓"
+		Auto1b.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		Auto1b.TextColor3 = Color3.fromRGB(0,0,0)
+		while x do
+			wait()
+			game.ReplicatedStorage.Remotes.Rebirth:FireServer(1000000000)
+		end
+		
+	else
+		x = false
+		Auto1b.Text = ""
+		Auto1b.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+	end
+end)
+
+label_7.Name = "label"
+label_7.Parent = main2
+label_7.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+label_7.BackgroundTransparency = 0.500
+label_7.Position = UDim2.new(0, 0, 0.478873253, 0)
+label_7.Size = UDim2.new(0, 141, 0, 20)
+label_7.Font = Enum.Font.SourceSans
+label_7.Text = "Auto 10b Rebirth"
+label_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+label_7.TextSize = 14.000
+local bb = false 
+Auto10b.Name = "Auto 10b"
+Auto10b.Parent = main2
+Auto10b.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Auto10b.Position = UDim2.new(0.881249964, 0, 0.478873193, 0)
+Auto10b.Size = UDim2.new(0, 18, 0, 20)
+Auto10b.Font = Enum.Font.SourceSans
+Auto10b.Text = ""
+Auto10b.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto10b.TextSize = 14.000
+Auto10b.MouseButton1Down:Connect(function()
+	if bb == false then
+		
+		bb = true
+		Auto10b.Text = "✓"
+		Auto10b.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		Auto10b.TextColor3 = Color3.fromRGB(0,0,0)
+		while bb do
+			wait()
+			game.ReplicatedStorage.Remotes.Rebirth:FireServer(10000000000)
+		end
+		
+	else
+		bb = false
+		Auto10b.Text = ""
+		Auto10b.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+	end
+end)
+
+label_8.Name = "label"
+label_8.Parent = main2
+label_8.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+label_8.BackgroundTransparency = 0.500
+label_8.Position = UDim2.new(0, 0, 0.535211265, 0)
+label_8.Size = UDim2.new(0, 141, 0, 20)
+label_8.Font = Enum.Font.SourceSans
+label_8.Text = "Auto 50b Rebirth"
+label_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+label_8.TextSize = 14.000
+local cc = false
+Auto50b.Name = "Auto 50b"
+Auto50b.Parent = main2
+Auto50b.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Auto50b.Position = UDim2.new(0.881249964, 0, 0.535211205, 0)
+Auto50b.Size = UDim2.new(0, 18, 0, 20)
+Auto50b.Font = Enum.Font.SourceSans
+Auto50b.Text = ""
+Auto50b.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto50b.TextSize = 14.000
+Auto50b.MouseButton1Down:Connect(function()
+	if cc == false then
+		
+		cc = true
+		Auto50b.Text = "✓"
+		Auto50b.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		Auto50b.TextColor3 = Color3.fromRGB(0,0,0)
+		while cc do
+			wait()
+			game.ReplicatedStorage.Remotes.Rebirth:FireServer(50000000000)
+		end
+		
+	else
+		cc = false
+		Auto50b.Text = ""
+		Auto50b.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+	end
+end)
+
+label_9.Name = "label"
+label_9.Parent = main2
+label_9.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+label_9.BackgroundTransparency = 0.500
+label_9.Position = UDim2.new(0, 0, 0.591549277, 0)
+label_9.Size = UDim2.new(0, 141, 0, 20)
+label_9.Font = Enum.Font.SourceSans
+label_9.Text = "Auto 200b Rebirth"
+label_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+label_9.TextSize = 14.000
+local nn = false
+Auto200b.Name = "Auto 200b"
+Auto200b.Parent = main2
+Auto200b.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Auto200b.Position = UDim2.new(0.881249964, 0, 0.591549218, 0)
+Auto200b.Size = UDim2.new(0, 18, 0, 20)
+Auto200b.Font = Enum.Font.SourceSans
+Auto200b.Text = ""
+Auto200b.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto200b.TextSize = 14.000
+Auto200b.MouseButton1Down:Connect(function()
+	if nn == false then
+		
+		nn = true
+		Auto200b.Text = "✓"
+		Auto200b.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		Auto200b.TextColor3 = Color3.fromRGB(0,0,0)
+		while nn do
+			wait()
+			game.ReplicatedStorage.Remotes.Rebirth:FireServer(200000000000)
+		end
+		
+	else
+		nn = false
+		Auto200b.Text = ""
+		Auto200b.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+	end
+end)
+
+label_10.Name = "label"
+label_10.Parent = main2
+label_10.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+label_10.BackgroundTransparency = 0.500
+label_10.Position = UDim2.new(0, 0, 0.645070434, 0)
+label_10.Size = UDim2.new(0, 141, 0, 20)
+label_10.Font = Enum.Font.SourceSans
+label_10.Text = "Auto 5t Rebirth"
+label_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+label_10.TextSize = 14.000
+local kk = false 
+Auto5t.Name = "Auto 5t"
+Auto5t.Parent = main2
+Auto5t.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Auto5t.Position = UDim2.new(0.881249964, 0, 0.64788723, 0)
+Auto5t.Size = UDim2.new(0, 18, 0, 20)
+Auto5t.Font = Enum.Font.SourceSans
+Auto5t.Text = ""
+Auto5t.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto5t.TextSize = 14.000
+Auto5t.MouseButton1Down:Connect(function()
+	if kk == false then
+		
+		kk = true
+		Auto5t.Text = "✓"
+		Auto5t.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		Auto5t.TextColor3 = Color3.fromRGB(0,0,0)
+		while kk do
+			wait()
+			game.ReplicatedStorage.Remotes.Rebirth:FireServer(5000000000000)
+		end
+		
+	else
+		kk = false
+		Auto5t.Text = ""
+		Auto5t.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+	end
+end)
+
+label_11.Name = "label"
+label_11.Parent = main2
+label_11.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+label_11.BackgroundTransparency = 0.500
+label_11.Position = UDim2.new(0, 0, 0.701408446, 0)
+label_11.Size = UDim2.new(0, 141, 0, 20)
+label_11.Font = Enum.Font.SourceSans
+label_11.Text = "Auto 30t Rebirth"
+label_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+label_11.TextSize = 14.000
+local xx = false
+Auto30t.Name = "Auto 30t"
+Auto30t.Parent = main2
+Auto30t.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Auto30t.Position = UDim2.new(0.881249964, 0, 0.695478916, 0)
+Auto30t.Size = UDim2.new(0, 18, 0, 20)
+Auto30t.Font = Enum.Font.SourceSans
+Auto30t.Text = ""
+Auto30t.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto30t.TextSize = 14.000
+Auto30t.MouseButton1Down:Connect(function()
+	if xx == false then
+		
+		xx = true
+		Auto30t.Text = "✓"
+		Auto30t.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		Auto30t.TextColor3 = Color3.fromRGB(0,0,0)
+		while xx do
+			wait()
+			game.ReplicatedStorage.Remotes.Rebirth:FireServer(30000000000000)
+		end
+		
+	else
+		xx = false
+		Auto30t.Text = ""
+		Auto30t.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+	end
+end)
+
+label_12.Name = "label"
+label_12.Parent = main2
+label_12.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+label_12.BackgroundTransparency = 0.500
+label_12.Position = UDim2.new(0, 0, 0.754831016, 0)
+label_12.Size = UDim2.new(0, 141, 0, 20)
+label_12.Font = Enum.Font.SourceSans
+label_12.Text = "Auto 300t Rebirth"
+label_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+label_12.TextSize = 14.000
+local aa = false
+Auto300t.Name = "Auto 300t"
+Auto300t.Parent = main2
+Auto300t.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Auto300t.Position = UDim2.new(0.881249964, 0, 0.751915395, 0)
+Auto300t.Size = UDim2.new(0, 18, 0, 20)
+Auto300t.Font = Enum.Font.SourceSans
+Auto300t.Text = ""
+Auto300t.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto300t.TextSize = 14.000
+Auto300t.MouseButton1Down:Connect(function()
+	if aa == false then
+		
+		aa = true
+		Auto300t.Text = "✓"
+		Auto300t.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		Auto300t.TextColor3 = Color3.fromRGB(0,0,0)
+		while aa do
+			wait()
+			game.ReplicatedStorage.Remotes.Rebirth:FireServer(300000000000000)
+		end
+		
+	else
+		aa = false
+		Auto300t.Text = ""
+		Auto300t.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+	end
+end)
+
+label_13.Name = "label"
+label_13.Parent = main2
+label_13.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+label_13.BackgroundTransparency = 0.500
+label_13.Position = UDim2.new(0, 0, 0.811168969, 0)
+label_13.Size = UDim2.new(0, 141, 0, 20)
+label_13.Font = Enum.Font.SourceSans
+label_13.Text = "Auto 2Qa Rebirth"
+label_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+label_13.TextSize = 14.000
+
+local nn = false
+Auto2Qa.Name = "Auto 2Qa"
+Auto2Qa.Parent = main2
+Auto2Qa.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Auto2Qa.Position = UDim2.new(0.881249905, 0, 0.811168909, 0)
+Auto2Qa.Size = UDim2.new(0, 18, 0, 20)
+Auto2Qa.Font = Enum.Font.SourceSans
+Auto2Qa.Text = ""
+Auto2Qa.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto2Qa.TextSize = 14.000
+Auto2Qa.MouseButton1Down:Connect(function()
+	if nn == false then
+		
+		nn = true
+		Auto2Qa.Text = "✓"
+		Auto2Qa.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		Auto2Qa.TextColor3 = Color3.fromRGB(0,0,0)
+		while nn do
+			wait()
+			game.ReplicatedStorage.Remotes.Rebirth:FireServer(2000000000000000)
+		end
+		
+	else
+		nn = false
+		Auto2Qa.Text = ""
+		Auto2Qa.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+	end
+end)
+
+label_14.Name = "label"
+label_14.Parent = main2
+label_14.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+label_14.BackgroundTransparency = 0.500
+label_14.Position = UDim2.new(0, 0, 0.867507041, 0)
+label_14.Size = UDim2.new(0, 141, 0, 20)
+label_14.Font = Enum.Font.SourceSans
+label_14.Text = "Auto 70Qa Rebirth"
+label_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+label_14.TextSize = 14.000
+local jj = false
+Auto1Qi.Name = "Auto 1Qi"
+Auto1Qi.Parent = main2
+Auto1Qi.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Auto1Qi.Position = UDim2.new(0.881249785, 0, 0.92394352, 0)
+Auto1Qi.Size = UDim2.new(0, 18, 0, 26)
+Auto1Qi.Font = Enum.Font.SourceSans
+Auto1Qi.Text = ""
+Auto1Qi.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto1Qi.TextSize = 14.000
+Auto1Qi.MouseButton1Down:Connect(function()
+	if jj == false then
+		
+		jj = true
+		Auto1Qi.Text = "✓"
+		Auto1Qi.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		Auto1Qi.TextColor3 = Color3.fromRGB(0,0,0)
+		while jj do
+			wait()
+			game.ReplicatedStorage.Remotes.Rebirth:FireServer(1000000000000000000)
+		end
+		
+	else
+		jj = false
+		Auto1Qi.Text = ""
+		Auto1Qi.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+	end
+end)
+local ee = false
+Auto70Qa.Name = "Auto 70Qa"
+Auto70Qa.Parent = main2
+Auto70Qa.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Auto70Qa.Position = UDim2.new(0.881249905, 0, 0.867506921, 0)
+Auto70Qa.Size = UDim2.new(0, 18, 0, 20)
+Auto70Qa.Font = Enum.Font.SourceSans
+Auto70Qa.Text = ""
+Auto70Qa.TextColor3 = Color3.fromRGB(255, 255, 255)
+Auto70Qa.TextSize = 14.000
+Auto70Qa.MouseButton1Down:Connect(function()
+	if ee == false then
+		
+		ee = true
+		Auto70Qa.Text = "✓"
+		Auto70Qa.BackgroundColor3 = Color3.fromRGB(0,255,0)
+		Auto70Qa.TextColor3 = Color3.fromRGB(0,0,0)
+		while ee do
+			wait()
+			game.ReplicatedStorage.Remotes.Rebirth:FireServer(700000000000000000)
+		end
+		
+	else
+		ee = false
+		Auto70Qa.Text = ""
+		Auto70Qa.BackgroundColor3 = Color3.fromRGB(30,30,30)
+		
+	end
+end)
+
+
+label_15.Name = "label"
+label_15.Parent = main2
+label_15.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+label_15.BackgroundTransparency = 0.500
+label_15.Position = UDim2.new(0, 0, 0.923943639, 0)
+label_15.Size = UDim2.new(0, 141, 0, 26)
+label_15.Font = Enum.Font.SourceSans
+label_15.Text = "Auto 1Qi Rebirth"
+label_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+label_15.TextSize = 14.000
