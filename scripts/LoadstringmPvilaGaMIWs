@@ -1,0 +1,23 @@
+--Created By A7NV--
+
+game.ReplicatedStorage.PlayerData[game.Players.LocalPlayer.UserId].PLUS.Value = true 
+while wait(0.1) do
+
+game.ReplicatedStorage.Connection:InvokeServer(49)
+
+wait(0.01)
+
+game.ReplicatedStorage.Connection:InvokeServer(49)
+
+wait(0.01)
+
+game.ReplicatedStorage.Connection:InvokeServer(49)
+end
+
+game.ReplicatedStorage.Connection:InvokeServer(9,2)
+
+game.ReplicatedStorage.Connection:InvokeServer(50)
+
+
+
+--this will give you more money when you sell stuff--
