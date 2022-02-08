@@ -1,0 +1,10 @@
+--BROUGHT TO YOU BY RSCRIPTS.NET--
+
+local ohNumber1 = -9e249
+
+game:GetService("ReplicatedStorage").Remotes.RebirthRemote:FireServer(ohNumber1)
+
+wait(1)
+local ohNumber1 = 9e250
+
+game:GetService("ReplicatedStorage").Remotes.RebirthRemote:FireServer(ohNumber1)
